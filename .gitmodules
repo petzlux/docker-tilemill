@@ -1,0 +1,3 @@
+[submodule "basemap"]
+	path = basemap
+	url = https://github.com/Geoportail-Luxembourg/basemap
