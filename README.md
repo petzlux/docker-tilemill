@@ -1,3 +1,7 @@
+How to build the container:
+```
+docker build -t tilemill-petz --build-arg http_proxy=$HTTP_PROXY --build-arg https_proxy=$HTTPS_PROXY
+```
 If you are running this on a dev machine with no direct access to db, you first
 need to create a tunnel to the db machine:
 ```
