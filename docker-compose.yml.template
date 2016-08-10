@@ -1,0 +1,16 @@
+tilemill:
+  image: tilemill-petz:latest
+  container_name: tilemill
+  environment:
+    TILEMILL_HOST: localhost
+    TILE_PORT: 20008
+    UI_PORT: 20009
+    no_proxy: <db_host>
+  ports:
+    - "20008:20008"
+    - "20009:20009"
+  extra_hosts:
+    - "<db_host>:<ip_address>"
+  volumes:
+    - ./basemap/cartocss:/root/Documents/MapBox/project
+
