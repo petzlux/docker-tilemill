@@ -5,7 +5,7 @@ docker build -t tilemill-petz --build-arg http_proxy=$HTTP_PROXY --build-arg htt
 If you are running this on a dev machine with no direct access to db, you first
 need to create a tunnel to the db machine:
 ```
-ssh -L 0.0.0.0:5432:homer:5432 -N workshop
+ssh -L 0.0.0.0:5432:<db_host_name>:5432 -N workshop
 ```
 Then you can run the container, specifying the tunnel route for homer
 ```
